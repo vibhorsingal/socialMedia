@@ -1,0 +1,26 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <span>Social Media </span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <span class="nav-link" dataComponent="allPosts">Home</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link" id="write" dataComponent="writePosts">Write Post</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link" id="my" dataComponent="myPosts">My Post</span>
+      </li>
+    </ul>
+    <a class="btn btn-light my-2 my-lg-0 disabled" id="username" href="/home">Login</a>
+  </div>
+</nav>
+
+<script src="../app/navbar.js"></script>
+<script src="../app/myPosts.js"></script>
+<script src="../app/writePosts.js"></script>
