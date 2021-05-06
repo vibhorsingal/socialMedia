@@ -3,9 +3,9 @@ const passport = require('passport')
 require('../config/passport')
 
 route.get('/', (req, res, next) => {
-    res.render('home')
+    res.render('login')
 })
 
-route.post('/', passport.authenticate('local', { failureRedirect: '/home', successRedirect: '/' }))
+route.post('/', passport.authenticate('local', { failureRedirect: '/login', successRedirect: '/' }))
 
 module.exports = route

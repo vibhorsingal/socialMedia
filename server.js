@@ -35,7 +35,7 @@ app.use(passport.session())
 //     next()
 // })
 
-app.use('/', express.static(__dirname + '/src/public'))
+app.use('/', express.static(__dirname + '/public'))
 app.get('/user-detail',(req,res)=>{
     res.send(req.user)
 })
